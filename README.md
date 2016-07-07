@@ -1,5 +1,7 @@
 # call_with_config
 
+call funtion with config(json object)
+
 [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/i5ting/call_with_config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NPM version](https://img.shields.io/npm/v/call_with_config.svg?style=flat-square)](https://www.npmjs.com/package/call_with_config)
 [![Build](https://travis-ci.org/i5ting/call_with_config.svg?branch=master)](https://travis-ci.org/i5ting/call_with_config)
