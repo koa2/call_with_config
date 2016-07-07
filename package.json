@@ -1,0 +1,27 @@
+{
+  "name": "call_with_config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5ting/call_with_config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i5ting/call_with_config/issues"
+  },
+  "homepage": "https://github.com/i5ting/call_with_config#readme",
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "co-exec": "^1.1.0"
+  }
+}
