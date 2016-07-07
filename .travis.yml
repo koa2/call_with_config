@@ -1,6 +1,7 @@
-sudo: false
+sudo: true
 language: node_js
 node_js:
   - stable
 script: 
   - npm test
+  - npm run report-coverage

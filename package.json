@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ava -v"
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov && codecov",
+    "standard": "./node_modules/.bin/standard index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,15 @@
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "co-exec": "^1.1.0"
+    "co-exec": "^1.1.0",
+    "codecov": "^1.0.1",
+    "ghooks": "^1.2.4",
+    "nyc": "^6.6.1",
+    "standard": "^7.1.2"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run standard"
+    }
   }
 }
