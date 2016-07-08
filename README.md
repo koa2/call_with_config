@@ -11,29 +11,32 @@ call funtion with config(json object)
 ## Install 
 
 ```
-npm i -S call_with_config
+$ npm i -S call_with_config@2
 ```
+
+## API
+
+> call_with_config(key, config, cumtomKey)
+
+- key = module name or local module
+- config for param
+- if cumtomKey exist, load config from config[cumtomKey]
 
 ## Usages
 
 ```
 var call_with_config = require('.')
 
-function favicon(path, options){
-  console.log('favicon = ' + JSON.stringify(arguments));
-  console.log('favicon path= ' + path)
-  console.dir(options)
-}
-
-call_with_config(favicon, {
-  favicon: {
-    'path':'sss',
-    'options': {
-      'maxAge': 1
-    }
+var r = call_with_config('./favicon', {
+  './favicon':{
+    'path': 'sss'
+  },
+  'empty-favicon':{
+    
   }
-}, true);
+});
 
+console.dir(r.toString())
 ```
 
 or
@@ -41,17 +44,15 @@ or
 ```
 var call_with_config = require('.')
 
-function favicon(path, options){
-  console.log('favicon = ' + JSON.stringify(arguments));
-  console.log('favicon path= ' + path)
-  console.dir(options)
-}
-
-call_with_config(favicon, {
-  'path': 'sss',
-  'options': {
-    'maxAge': 1
+var r = call_with_config('koa-favicon', {
+  'koa-favicon':{
+    'path': 'sss',
+    'options': {
+      'maxAge': 1
+    }
   }
 });
+
+console.dir(r.toString())
 
 ```
