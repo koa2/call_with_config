@@ -13,4 +13,4 @@ call_with_config(favicon, {
       'maxAge': 1
     }
   }
-}, 222);
+}, true);
