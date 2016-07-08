@@ -1,23 +1,23 @@
 var call_with_config = require('.')
 
-var favicon = require('./favicon')
+var favicon = require('koa-favicon')
 
 // console.log(favicon.toString())
 
-var r = call_with_config('./favicon', {
+var r = call_with_config('koa-favicon', {
   'koa-favicon':{
     'path': 'sss',
     'options': {
       'maxAge': 1
     }
   },
-  './favicon':{
+  'favicon':{
     'path': 'sss'
   },
   'empty-favicon':{
     
   }
-});
+}, 'empty-favicon');
 
 
 console.dir(r.toString())

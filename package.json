@@ -1,7 +1,7 @@
 {
   "name": "call_with_config",
-  "version": "1.0.3",
-  "description": "",
+  "version": "2.0.0",
+  "description": "call with config",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava -v",
@@ -12,9 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/i5ting/call_with_config.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "call",
+    "config",
+    "koa",
+    "express",
+    "js"
+  ],
+  "author": "i5ting",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/i5ting/call_with_config/issues"
   },
@@ -28,6 +34,7 @@
     "codecov": "^1.0.1",
     "ghooks": "^1.2.4",
     "nyc": "^6.6.1",
+    "koa-favicon": "^2.0.0",
     "standard": "^7.1.2"
   },
   "config": {
