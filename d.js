@@ -1,9 +1,5 @@
 var call_with_config = require('.')
 
-var favicon = require('koa-favicon')
-
-// console.log(favicon.toString())
-
 var r = call_with_config('koa-favicon', {
   'koa-favicon':{
     'path': 'sss',
@@ -18,6 +14,5 @@ var r = call_with_config('koa-favicon', {
     
   }
 });
-
 
 console.dir(r.toString())
