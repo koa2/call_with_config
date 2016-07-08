@@ -31,7 +31,9 @@ module.exports = function (key, config, cumtomKey) {
     p = p[key]
   }
 
-  console.log(argDecl[2])
+  if (p === null) {
+    p = {}
+  }
 
   argDecl[2].split(FN_ARG_SPLIT).forEach(function (arg) {
     debug(arg)
